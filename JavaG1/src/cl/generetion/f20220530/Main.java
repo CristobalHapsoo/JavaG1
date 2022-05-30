@@ -37,7 +37,7 @@ public class Main {
 			//era una variable ahora es un objeto
 	    	//System.out.println(listaGrupo.get(i).getNombre());	
 	    	//System.out.println(listaGrupo.get(i).getApellido());	
-			System.out.println(listaGrupo.get(i).toString());	
+			//System.out.println(listaGrupo.get(i).toString());	
 	    }
 	    	
 	    for (Alumno objetoAlumno : listaGrupo) {
