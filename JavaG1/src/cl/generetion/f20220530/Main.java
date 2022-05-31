@@ -3,6 +3,8 @@ package cl.generetion.f20220530;
 import java.util.ArrayList;
 import java.util.List;
 
+import cl.generetion.f20220531.Cliente;
+
 public class Main {
 	
 	public static void main(String[] args) {
@@ -25,6 +27,8 @@ public class Main {
 		Alumno alumno5 = new Alumno (" Luis", " García", 28," G1");
 		Alumno alumno6 = new Alumno (" Joao", " Aranda", 28," G1");
 		
+		
+		//instacia de una clase 
 		Alumno alumno =  new Alumno ();
 		listaGrupo.add(alumno);
 		listaGrupo.add(alumno2);
@@ -48,7 +52,7 @@ public class Main {
 	    	
 	    	// System.out.println(objetoAlumno);
 	    	
-	    	
+
 	    	
 	    
 		}
