@@ -47,8 +47,8 @@ public class ejercicio1f20220525 {
 		valorComision =  ventaCliente - valorTotal;
 		
 		//Comentarios al usuario
-		System.out.println("El valor total es:" + valorTotal);
-		System.out.println("La comision es:" + valorComision);
+		System.out.println("El valor total es: " + valorTotal);
+		System.out.println("La comision es: " + valorComision);
 		System.out.println("Ahora continúe con las siguientes instrucciones para saber su descuento en entradas");
 		
 	}
