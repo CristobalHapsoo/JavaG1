@@ -1,0 +1,40 @@
+package com.generation.models;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="usuarios")
+public class Usuario {
+
+	
+	
+	String Nombre;
+	String Apellido;
+	Integer edad;
+	
+	
+	public Usuario() {
+		super();
+	}
+	public String getNombre() {
+		return Nombre;
+	}
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
+	public String getApellido() {
+		return Apellido;
+	}
+	public void setApellido(String apellido) {
+		Apellido = apellido;
+	}
+	public Integer getEdad() {
+		return edad;
+	}
+	public void setEdad(Integer edad) {
+		this.edad = edad;
+	}
+	
+
+}

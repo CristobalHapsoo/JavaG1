@@ -1,0 +1,37 @@
+package com.generation.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@Controller
+@RequestMapping("/registro")
+public class RegistroController {
+
+
+	@RequestMapping("")
+	public String registro(@ModelAttribute("usuario") Usuario usuario) {
+      return "registro.jsp";
+	}
+
+	@RequestMapping("/Usuario")
+	public String registroUsuario() {
+      System.out.println("Estamos en el metodo de registro de usuario");
+		return "registro.jsp";
+	}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+

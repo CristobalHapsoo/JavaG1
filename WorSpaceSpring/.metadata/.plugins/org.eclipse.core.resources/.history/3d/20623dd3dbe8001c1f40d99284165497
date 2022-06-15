@@ -1,0 +1,18 @@
+package com.generation.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller 
+public class IndexController {
+     //http://localhost:8000/  
+	// anotacion para capturar las rutas
+	@RequestMapping("/")
+	public String index() {
+      return "";
+	}
+
+
+	 // http://localhost:8000/usuario
+	//  @RequestMapping("/usuario")
+}
