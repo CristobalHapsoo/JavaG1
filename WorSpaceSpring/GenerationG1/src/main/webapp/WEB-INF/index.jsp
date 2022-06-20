@@ -6,21 +6,22 @@
 
         <head>
             <meta charset="UTF-8">
-            <title>Joao Aranda</title>
+            <title>Cristobal Hapsoo</title>
         </head>
 
         <body>
             <h1>Hola
-                <c:out value="${nombres}"></c:out>
-                <c:out value="${apellidos}"></c:out>
+                <c:out value="${marca}"></c:out>
+                <c:out value="${modelo}"></c:out>
+                <c:out value="${anio}"></c:out>
             </h1>
             <p>
-                <c:out value="${edad}"></c:out>
+                <c:out value="${velocidad}"></c:out>
             </p>
             <br>
             <%-- ${} --> esto es un place holder--%>
                 <p>
-                    <c:out value="${usuario.nombre} ${usuario.getApellido()} ${usuario.edad}"></c:out>
+                    <c:out value="${auto.marca} ${auto.getModelo()} ${auto.anio} ${auto.velocidad}"></c:out>
                 </p>
         </body>
 
