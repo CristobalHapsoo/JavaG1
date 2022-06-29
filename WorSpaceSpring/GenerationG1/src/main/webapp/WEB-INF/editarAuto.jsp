@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-        <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+        <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
             <!DOCTYPE html>
             <html>
 
@@ -16,22 +16,22 @@
                     <c:if test="${msgError!= null}">
                         <c:out value="${msgError}"></c:out>
                     </c:if>
-                    <form:form action="/auto/actualizar/${auto.id}" method="post" modelAttribute="auto">
+                    <form:form action="/auto/guardar" method="post" modelAttribute="auto">
                         <form:label path="marca" class="form-label">Marca:</form:label>
                         <form:input path="marca" class="form-control" />
                         <br>
                         <form:label path="modelo" class="form-label">Modelo:</form:label>
                         <form:input path="modelo" class="form-control" />
                         <br>
-                        <form:label path="anio" class="form-label">Anio:</form:label>
-                        <form:input path="anio" class="form-control" />
-                        <br>
                         <form:label path="velocidad" class="form-label">Velocidad:</form:label>
                         <form:input type="number" path="velocidad" class="form-control" />
                         <br>
+                        <form:label path="color" class="form-label">Color:</form:label>
+                        <form:input path="color" class="form-control" />
                         <br>
-
-                        <button type="submit" class="btn btn-outline-warning">Editar Auto</button>
+                        <input type="submit" value="Guardar Auto">
+                        <button type="submit" class="btn btn-primary">Guardar Auto</button>
+                        <button type="submit" class="btn btn-outline-primary">Guardar Auto</button>
                     </form:form>
                 </div>
             </body>

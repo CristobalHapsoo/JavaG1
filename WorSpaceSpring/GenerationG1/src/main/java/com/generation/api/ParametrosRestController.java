@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ParametrosRestController {
 	
 	
-	@RequestMapping("/api")
+	@RequestMapping("/api2")
 	//localhost:8080/api?fecha=20220613
 	public String fecha (@RequestParam(value="fecha") String fecha)  {
        //?q=informacion 

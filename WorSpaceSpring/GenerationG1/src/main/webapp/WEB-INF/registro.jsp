@@ -1,42 +1,39 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-    <!DOCTYPE html>
-    <html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+        <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+            <!DOCTYPE html>
+            <html>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <div>
-        <c:if test="${msgError!= null }">
-            <c:out value="${msgError }"></c:out>
-        </c:if>
-        <form:form action="/registro/auto" method="post" modelAttribute="auto">
-            <form:label path="marca">Marca:</form:label>
-            <form:input path="marca" />
-            <br>
-            <form:label path="modelo">Modelo:</form:label>
-            <form:input path="modelo" />
-            <br>
-            <form:label path="anio">Anio:</form:label>
-            <form:input type="String" path="anio" />
-            <br>
+            <head>
+                <meta charset="UTF-8">
+                <title>Registro</title>
+            </head>
 
-            <form:label path="velocidad">velocidad:</form:label>
-            <form:input type="Double" path="velocidad" />
-            <br>
+            <body>
+                <div>
+                    <c:if test="${msgError!= null}">
+                        <c:out value="${msgError}"></c:out>
+                    </c:if>
 
-
+                    <form:form action="/registro/usuario" method="post" modelAttribute="usuario">
+                        <form:label path="nombre">Nombre:</form:label>
+                        <form:input path="nombre" />
+                        <br>
+                        <form:label path="apellido">Apellido:</form:label>
+                        <form:input path="apellido" />
+                        <br>
+                        <form:label path="edad">Edad:</form:label>
+                        <form:input type="number" path="edad" />
+                        <br>
+                        <form:label path="password">Password:</form:label>
+                        <form:input type="password" path="password" />
+                        <br>
 
 
-            <button type="submit" class="btn btn-outline-primary">Guardar Auto</button>
-        </form:form>
+                        <input type="submit" value="Registrar">
+                    </form:form>
+                </div>
+            </body>
 
-    </div>
-
-    <body>
-
-    </body>
-
-    </html>
+            </html>

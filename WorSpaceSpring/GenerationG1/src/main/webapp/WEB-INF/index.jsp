@@ -1,28 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+pageEncoding="UTF-8"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
         <!DOCTYPE html>
         <html>
 
         <head>
             <meta charset="UTF-8">
-            <title>Cristobal Hapsoo</title>
+            <title>Israel Palma Quezada</title>
         </head>
 
         <body>
+            <!--  -->
             <h1>Hola
-                <c:out value="${marca}"></c:out>
-                <c:out value="${modelo}"></c:out>
-                <c:out value="${anio}"></c:out>
+                <c:out value="${nombres }"></c:out>
+                <c:out value="${apellidos}"></c:out>
             </h1>
             <p>
-                <c:out value="${velocidad}"></c:out>
+                <c:out value="${edad }"></c:out>
             </p>
             <br>
-            <%-- ${} --> esto es un place holder--%>
-                <p>
-                    <c:out value="${auto.marca} ${auto.getModelo()} ${auto.anio} ${auto.velocidad}"></c:out>
-                </p>
+            <p>
+                <c:out value="${usuario.nombre} ${usuario.apellido} ${usuario.edad } ${usuario.getEdad()}"></c:out>
+            </p>
+
         </body>
 
         </html>
