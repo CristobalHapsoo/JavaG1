@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* 3 formas basicas de asignar un estilo */
+        /* por elemento HTML, todas etiquetas se ven afectadas*/
+        /* Id, class y etiqueta. nivel de herarquia*/
+        
+        div {
+            background-color: bisque;
+            width: 500px;
+        }
+        
+        p {
+            background-color: rgb(126, 214, 255);
+            color: aquamarine;
+        }
+        
+        img {
+            /* con porcentaje sse refiere a la pagina o del contenedor
+            se usa principalmete con paginas responsivas */
+            width: 100px;
+            /* EM = 16px (este siempre seria su valor 4EM = 64) Y REM no es escalable*/
+        }
+        /* Segunda forma de dr estilo*/
+        /* por clases, se ven afectados aquellas etiquetas  que tengan la clase */
+        
+        .colorGreen {
+            color: rgb(24, 202, 66);
+            background-color: aquamarine;
+        }
+        /* 3 estilo especifico por etiqueta, que es por id del elemento*/
+        
+        #importante {
+            color: rgb(223, 234, 70);
+        }
+        
+        .generation1 {
+            color: blueviolet;
+        }
+        
+        #pg1 {
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<div>
+    <div>
+        <p>parrafo 1</p>
+        <p class="colorGreen">parrafo 2</p>
+        <p class="colorGreen">parrafo 3</p>
+        <p id="importante">parrafo 4</p>
+        <img src="https://yt3.ggpht.com/ytc/AKedOLTbNT8XE7IXaLHOt-cCwWDiA8GmBL_bqiQBosXSbA=s900-c-k-c0x00ffffff-no-rj" alt="front">
+    </div>
+    <div class="colorGreen">
+        <p>parrafo 5</p>
+    </div>
+    <p id="pg1" class="generation1">parrafo 6 </p>
+
+    </body>
+
+</html>

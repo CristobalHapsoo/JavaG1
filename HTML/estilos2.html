@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de estilos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        p {
+            width: 200px;
+            /* ancho */
+            height: 50px;
+            /* alto */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            line-height: 10px;
+            font-size: 1em;
+            font-weight: 100;
+        }
+        
+        div {
+            overflow: scroll;
+            /* agregar la barraa de desplazamiento*/
+            width: 400px;
+            height: 400px;
+            background: blue url("https://yt3.ggpht.com/ytc/AKedOLTbNT8XE7IXaLHOt-cCwWDiA8GmBL_bqiQBosXSbA=s900-c-k-c0x00ffffff-no-rj") no-repeat center;
+            background-size: 10%;
+            border: 10px solid rgb(192, 32, 32);
+            border-top: 10px solid #ccc;
+            border-radius: 10px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .estatico {
+            width: 500px;
+            height: 20px;
+            position: static;
+        }
+        
+        .relativo {
+            width: 500px;
+            height: 20px;
+            left: 20px;
+            position: relative;
+        }
+        
+        .fijo {
+            width: 500px;
+            height: 20px;
+            right: 25px;
+            top: 0px;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Elementos</h1>
+        <a href="#"> prueba de link</a>
+        <p>parrafo 1</p>
+    </div>
+    <div class="estatico">
+        <p>Este es un parrafo</p>
+    </div>
+    <div class="relativo">
+        <p>Este es un parrafo</p>
+    </div>
+    <div class="fijo">
+        <p>Este es un parrafo</p>
+    </div>
+</body>
+
+</html>

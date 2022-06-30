@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulario de envio</h1>
+    <!--action // ruta url -->
+    <form action="" method="post">
+        <label for="apellido">apellido</label>
+        <input type="apellido" id="apellido" name="apellido" placeholder="ingresa tu apellido">
+        <br>
+        <label for="mail">mail</label>
+        <input type="mail" id="mail" name="mail" placeholder="ingresa tu mail">
+        <br>
+        <label for="pass"> password</label>
+        <input type="password" id="pass" name="pass" required>
+        <br>
+        <label for="fecha">fecha</label>
+        <input type="date" id="fecha" name="fecha" min="2001-11-11" max="2022-12-12">
+        <br>
+        <label for="fecha2"> fecha2</label>
+        <input type="datetime-local" id="fecha2" name="fecha2">
+        <br>
+        <!--Oculto visualmente-->
+        <input type="hidden" name="id" id="id" value="11">
+        <br>
+        <!--text area-->
+        <textarea id="textarea" name="textarea" cols="50" rows="10" maxlength="150" minlength="2" placeholder="ingresa un comentario"></textarea>
+
+        <br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="Borrar">
+        <button type="submit"> Guardar</button>
+    </form>
+
+</body>
+
+</html>
