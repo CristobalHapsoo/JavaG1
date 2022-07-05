@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery 1</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            //elemento , clase , id-> asignar funcionalidad
+            //$('#btnEnviar').evento();
+            $('p').click(function() {
+                console.log($(this).text());
+                $(this).text('Esto es un texto por uso del this');
+            });
+
+
+            //get y set
+            $('#btn1').click(function() {
+                let parrafo1 = $('#p1').text(); //obtener los valores del elemento
+                alert("evento click " + parrafo1);
+                //set
+                $('#p1').text('Esto en un nuevo mensaje');
+            });
+
+            //funciones de efectos
+            //hide()-> ocultar elemento
+            $('#btn2').click(function() {
+                $('#p2').hide();
+            });
+            //show()-> mostrar elemento
+            $('#btn3').click(function() {
+                $('#p2').show();
+            });
+            //toggle()-> ocultar o mostrar elementos
+            $('#btn4').click(function() {
+                $('#p2').toggle();
+            });
+            //slideDown
+            $('#btn5').click(function() {
+                $('#p3').slideDown('slow');
+            });
+            //slideUp
+            $('#btn6').click(function() {
+                $('#p3').slideUp(5000);
+            });
+            //slideToggle
+            $('#btn7').click(function() {
+                $('#p3').slideToggle('fast');
+            });
+            //fadeIn()
+            $('#btn8').click(function() {
+                $('#p4').fadeIn('slow');
+            });
+            //fadeIn()
+            $('#btn9').click(function() {
+                $('#p4').fadeOut('fast');
+            });
+            //fadeToggle()
+            $('#btn10').click(function() {
+                $('#p4').fadeToggle(4000);
+            });
+
+            //fin jquery    
+        });
+    </script>
+
+</head>
+
+<body>
+    <h1>Getter y Setter</h1>
+    <p id="p1">esto es un parrafo 1</p>
+    <button id="btn1"> get y set</button>
+    <br>
+    <hr>
+    <!--Efectos-->
+    <!--hide show toggle-->
+    <h1>Hide - Show - Toggle</h1>
+    <p id="p2">Esto es un parrafo 2</p>
+    <button id="btn2"> hide()</button>
+    <button id="btn3"> show()</button>
+    <button id="btn4"> toggle()</button>
+    <br>
+    <hr>
+    <!--slideUp slideDown slideToggle-->
+    <h1>SlideUp SlideDown SlideToggle</h1>
+    <button id="btn5"> SlideDown()</button>
+    <button id="btn6"> SlideUp()</button>
+    <button id="btn7"> SlideToggle()</button>
+    <p id="p3">Esto es un parrafo 3</p>
+    <br>
+    <hr>
+    <!-- fadeIn fadeOut fadeToggle -->
+    <h1>FadeIn FadeOut FadeToggle</h1>
+    <button id="btn8"> fadeIn()</button>
+    <button id="btn9"> FadeOut()</button>
+    <button id="btn10"> FadeToggle()</button>
+    <p id="p4">Esto es un parrafo 4</p>
+    <br>
+    <hr>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Practice</title>
+    <link rel="stylesheet" type="text/css" href="bloques.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header"></div>
+        <div id="navigation"></div>
+        <div id="main_content">
+            <div class="subcontents"></div>
+            <div class="subcontents"></div>
+            <div class="subcontents"></div>
+            <div id="advertisement"></div>
+        </div>
+    </div>
+</body>
+
+</html>
